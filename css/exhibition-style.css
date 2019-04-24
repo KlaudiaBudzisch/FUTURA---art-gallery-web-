@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(243, 240, 240);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+section.gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-container {
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+.article {
+    position: relative;
+    margin: 15vh auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.article>* {
+    width: 100%;
+}
+
+.header-photo {
+    position: relative;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-text {
+    position: absolute;
+    bottom: 0;
+    margin-top: auto;
+    padding: 25px 20px;
+    text-align: justify;
+    background-color: rgb(205, 215, 236);
+}
+
+.article-text h3 {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.article-text h4 {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+.article-text p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.article-gallery {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+
+.pic-box {
+    display: flex;
+    padding: 2px;
+}
+
+.pic {
+    flex-grow: 1;
+    height: 13vh;
+    margin: 2px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pic1a {
+    background-image: url('img/exh-1/exh-p1.jpg');
+}
+
+#pic2a {
+    background-image: url('img/exh-1/exh-p2.jpg');
+}
+
+#pic3a {
+    background-image: url('img/exh-1/exh-p3.jpg');
+}
+
+#pic4a {
+    background-image: url('img/exh-1/exh-p4.jpg');
+}
+
+#pic5a {
+    background-image: url('img/exh-1/exh-p5.jpg');
+}
+
+#pic6a {
+    background-image: url('img/exh-1/exh-p6.jpg');
+}
+
+
+#header1 {
+    background-image: url('img/bgc-main.jpg');
+}
+
+#text1 {
+    background-color: rgba(255, 200, 217, 0.8);
+}
+
+#pic1b {
+    background-image: url('img/exh-2/exh1-p1.jpg');
+}
+
+#pic2b {
+    background-image: url('img/exh-2/exh1-p2.jpg');
+}
+
+#pic3b {
+    background-image: url('img/exh-2/exh1-p3.jpg');
+}
+
+#pic4b {
+    background-image: url('img/exh-2/exh1-p4.jpg');
+}
+
+#pic5b {
+    background-image: url('img/exh-2/exh1-p5.jpg');
+}
+
+#pic6b {
+    background-image: url('img/exh-2/exh1-p6.jpg');
+}
+
+#header2 {
+    background-image: url('img/exh-2/header-photo.jpg');
+}
+
+#text2 {
+    background-color: rgba(221, 200, 255, 0.8);
+}

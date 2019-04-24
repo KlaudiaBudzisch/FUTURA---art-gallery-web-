@@ -1,0 +1,125 @@
+div.sidenav {
+    position: fixed;
+    padding: 40px;
+    opacity: 0;
+    height: 100%;
+    min-width: 20%;
+    z-index: 1;
+    top: 0;
+    left: -50%;
+    background-color: rgba(7, 7, 7, 0.9);
+    overflow: hidden;
+    transition: 0.8s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+div.sidenav.open {
+    opacity: 1;
+    left: 0;
+}
+
+a.menu {
+    position: relative;
+    padding: 3vh 2vh;
+    margin: 2vh 0;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: -1px 1px 1px rgb(27, 27, 27);
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+a.menu::before,
+a.menu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.9);
+    opacity: 0;
+    border: 1px solid rgba(103, 54, 218, 0.5);
+    border-radius: 36% 64% 61% 39% / 63% 60% 40% 37%;
+    transition: 0.3s ease-in-out;
+}
+
+a.menu:hover::before,
+a.menu:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+a.menu:hover::before {
+    top: 3px;
+    left: -3px;
+}
+
+a.menu:hover::after {
+    top: -2px;
+    left: 3px;
+}
+
+div.icon-menu {
+    position: fixed;
+    top: 2vh;
+    left: 2vh;
+    width: 33px;
+    height: 21px;
+    transform: rotate(0deg);
+    z-index: 3;
+    cursor: pointer;
+}
+
+div.icon-menu span {
+    position: absolute;
+    display: block;
+    height: 25%;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 20px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.35s ease-in-out;
+}
+
+div.icon-menu span:nth-child(1) {
+    top: 0px;
+}
+
+div.icon-menu span:nth-child(2),
+div.icon-menu span:nth-child(3) {
+    top: 50%;
+}
+
+div.icon-menu span:nth-child(4) {
+    top: 100%;
+}
+
+div.icon-menu.open span:nth-child(1) {
+    top: 50%;
+    width: 0;
+    left: 50%;
+}
+
+div.icon-menu.open span:nth-child(2) {
+    transform: rotate(42deg);
+    z-index: 2;
+}
+
+div.icon-menu.open span:nth-child(3) {
+    transform: rotate(-42deg);
+    z-index: 2;
+}
+
+div.icon-menu.open span:nth-child(4) {
+    top: 50%;
+    width: 0;
+    left: 50%;
+}
